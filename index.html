@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 3px solid red;
+        margin: 3px;
+        padding: 3px;
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dizi Elamanlarından En Büyük İKİNCİ Elemanın Bulunması</h1>
+    <div>
+      <h2>1. Durum: Hazır Dizilerden Birini Seçebilirsiniz</h2>
+      <form action="">
+        <input
+          type="radio"
+          name="secilen"
+          id="hazir1"
+          value="4,9,7,2,8,3,1,6"
+        />
+        <label for="hazir1">Dizi1 = [4,9,7,2,8,3,1,6]</label>
+        <br />
+        <input
+          type="radio"
+          name="secilen"
+          id="hazir2"
+          value="54,22,89,63,75,99,94,15"
+        />
+        <label for="hazir2">Dizi 2 = [54,22,89,63,75,99,94,15]</label>
+        <br />
+        <input
+          type="radio"
+          name="secilen"
+          id="hazir3"
+          value="8,91,25,64,45,66,12,5"
+        />
+        <label for="hazir3">Dizi 3 = [8,91,25,64,45,66,12,5]</label><br />
+        <input
+          type="button"
+          value="Gönder"
+          onclick="getSecondLargest_secilen()"
+        />
+      </form>
+    </div>
+    <div>
+      <h2>Sonuç:</h2>
+      <p id="demo"></p>
+      <p id="demo1"></p>
+    </div>
+    <div>
+      <h2>2. Durum: Dizi Elemanlarını Manuel Doldurulması</h2>
+      <form action="">
+        <label for="girdi">Elemanları Giriniz</label>
+        <input
+          type="text"
+          name="manuel"
+          id="girdi"
+          placeholder="Sadece integer Giriniz"
+        />
+        <input
+          type="button"
+          value="Gönder"
+          onclick="getSecondLargest_manuel()"
+        />
+      </form>
+    </div>
+    <div>
+      <h2>Girilen Sayılar:</h2>
+      <p id="demo2"></p>
+      <hr />
+      <h2>Sonuç:</h2>
+      <p id="demo3"></p>
+      <hr />
+      <h2>Yeni Dizi:</h2>
+      <p id="demo4"></p>
+    </div>
+    <script src="arrays.js"></script>
+  </body>
+</html>
